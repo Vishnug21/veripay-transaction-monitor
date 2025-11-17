@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Veripay Transaction Monitor</string>
+
+    <!-- Default placeholder (keep if needed) -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Dashboard Menu Strings -->
+    <string name="sort">Sort</string>
+    <string name="settings">Settings</string>
+</resources>

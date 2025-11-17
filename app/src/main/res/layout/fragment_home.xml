@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorSurface">
+
+    <!-- Totals Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvLedgerBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ledger balance: ₹0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnBackground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/tvTodayTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Today: ₹0"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnBackground" />
+
+            <TextView
+                android:id="@+id/tvAllTimeTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All-time: ₹0"
+                android:textSize="14sp"
+                android:layout_marginStart="12dp"
+                android:textColor="?attr/colorOnBackground" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Veripay"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:textColor="?attr/colorOnBackground" />
+
+    <TextView
+        android:id="@+id/tvHomeSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last 3 transactions"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"
+        android:textColor="?attr/colorOnBackground" />
+
+    <!-- Card / container for transactions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/colorSurface"
+        android:elevation="2dp"
+        android:padding="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLastThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No transactions yet."
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="?attr/colorOnBackground" />
+    </LinearLayout>
+
+    <!-- View All button -->
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Transactions"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary" />
+
+</LinearLayout>

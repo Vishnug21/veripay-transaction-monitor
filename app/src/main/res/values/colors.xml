@@ -1,0 +1,28 @@
+<resources>
+    <!-- Primary color set -->
+    <color name="colorPrimary">#006876</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#97F0FF</color>
+    <color name="colorOnPrimaryContainer">#001F24</color>
+
+    <!-- Secondary color set -->
+    <color name="colorSecondary">#016E00</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#78FF57</color>
+    <color name="colorOnSecondaryContainer">#002200</color>
+
+    <!-- Surface & Background -->
+    <color name="colorSurface">#F8FDFF</color>
+    <color name="colorOnSurface">#001F24</color>
+    <color name="colorBackground">#F8FDFF</color>
+    <color name="colorOnBackground">#001F24</color>
+
+    <!-- Error colors -->
+    <color name="colorError">#BA1B1B</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorErrorContainer">#FFDAD4</color>
+    <color name="colorOnErrorContainer">#410001</color>
+
+    <!-- Accent (legacy, optional) -->
+    <color name="colorAccent">#03DAC6</color>
+</resources>
